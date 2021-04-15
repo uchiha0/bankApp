@@ -22,7 +22,8 @@ class Budget:
                 print(f'You have withdrawn, {amount} from your {self.name}-account successfully.')               
         except: 
             print('You cannot withdraw that amount, please try again.')
-
+            
+    @property
     def check_balance(self):
         return f'Your {self.name}-account balance is {self._balance}'
 
